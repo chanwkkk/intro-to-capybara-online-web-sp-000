@@ -1,12 +1,6 @@
 # Write your code here!
-class Application < Sinatra::Base
+require 'Sinatra'
 
-  get '/' do
-    erb :index
-  end
+require_relative './app'
 
-
-  post '/greet' do
-    erb :greet
-  end
-end
+run Application
